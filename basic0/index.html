@@ -1,0 +1,26 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="style0.css" /> <!--Since "stylesheet" folder is already included inside "server1.js", only need to include "file name" here-->
+</head>
+<body>
+    <!--<form action="http://localhost:8081/process_get" method="get">
+        First Name: <input type="text" name="first_name" /><br />
+        Last Name: <input type="text" name="last_name" />
+        <input type="submit" value="Submit" />
+    </form>-->
+    <h1>Green</h1>
+    <form action="http://localhost:8081/process_post" method="post">
+        First Name: <input type="text" name="first_name" /><br />
+        Last Name: <input type="text" name="last_name" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <h1>File Uploading Form</h1>
+    <form action="http://localhost:8081/file_upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" size="50"/><br />
+        <input type="submit" value="Upload File" />
+    </form>
+</body>
+</html>
